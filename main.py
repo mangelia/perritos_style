@@ -13,3 +13,10 @@ print()
 print(r.text, type(r.text))
 
 print(otra_variable["message"])
+printing_on_file = requests.get(otra_variable["message"]).content
+
+with open("dog.jpg","wb") as image:
+    image.write(printing_on_file)
+
+
+
